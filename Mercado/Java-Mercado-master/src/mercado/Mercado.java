@@ -46,7 +46,7 @@ public class Mercado {
     System.out.println("|        2. Consultar Produto |");
     System.out.println("|        3. Sair              |");
     System.out.println("===============================");
-    System.out.print("Selecione uma opção: ");
+    System.out.print("Selecione uma opc�o: ");
     Scanner teclado = new Scanner(System.in);
     opcao = teclado.nextInt();
 

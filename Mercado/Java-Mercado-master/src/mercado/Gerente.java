@@ -15,13 +15,13 @@ public class Gerente extends Usuario {
         System.out.println("=====================================");
         System.out.println("|              GERENTE              |");
         System.out.println("=====================================");
-        System.out.println("| OpÃ§Ãµes:                           |");
+        System.out.println("| Opções:                           |");
         System.out.println("|   1. Adicionar produto em estoque |");
         System.out.println("|   2. [Relatorio] Vendas           |");
         System.out.println("|   2. [Relatorio] Estoque          |");
         System.out.println("|   3. Sair                         |");
         System.out.println("=====================================");
-        System.out.print(" OpÃ§Ã£o: ");
+        System.out.print(" Opção: ");
         opcao = teclado.nextInt();
         switch (opcao) {
             case 1:
@@ -33,9 +33,13 @@ public class Gerente extends Usuario {
                 System.out.println("Saindo...");
                 break;
             default:
-                System.out.println("OpÃ§Ã£o InvÃ¡lida");
+                System.out.println("Opção Invalida");
                 break; 
         }
         
+    }
+    
+    public void adicionarProduto(Produto prod, Estoque estoque,int quant) {
+    	estoque.add(prod,quant);
     }
 }
