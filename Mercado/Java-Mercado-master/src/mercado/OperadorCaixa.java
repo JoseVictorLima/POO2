@@ -6,7 +6,7 @@ import java.util.Date;
 
 public class OperadorCaixa extends Usuario {
 
-	private ArrayList<String> relatorios = new ArrayList();
+	static ArrayList<String> relatorios = new ArrayList();
 	
     public OperadorCaixa(String usuario, String senha, String nome, int tipo) {
         super(usuario, senha, nome, tipo);

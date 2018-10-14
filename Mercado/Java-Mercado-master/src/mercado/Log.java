@@ -2,7 +2,7 @@ package mercado;
 import java.util.*;
 
 public class Log {
-    private ArrayList<String> historico = new ArrayList();
+    static ArrayList<String> historico = new ArrayList();
     
     public void criarLog(OperadorCaixa operador,Produto produto,Caixa caixa) {
     	String log;
