@@ -26,13 +26,13 @@ public class Produto {
     
     public void consultarPreco(Estoque estoque){
         int codProduto;
-        // Menu Consultar o preÃ§o do Produto
+        // Menu Consultar o Produto
         System.out.println("===============================");
-        System.out.println("|      Consulta de preÃ§o      |");
+        System.out.println("|      Consulta de preço      |");
         System.out.println("===============================");
-        System.out.print("CÃ³digo do produto: ");
+        System.out.print("Coigo do produto: ");
         Scanner teclado = new Scanner(System.in);
         codProduto = teclado.nextInt();
-        System.out.println(estoque.getProduto(codProduto).preco);
+        System.out.println("Nome: "+estoque.getProduto(codProduto).nome+", Preço: "+estoque.getProduto(codProduto).preco+", Quantidade: "+ estoque.getQuantidade(codProduto));
       }
 }

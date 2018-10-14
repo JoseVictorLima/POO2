@@ -16,4 +16,7 @@ public class Estoque {
    public Produto getProduto(int cod){
        return this.listaProduto.get(cod);
    }
+   public int getQuantidade(int cod) {
+	   return this.quantidade.get(cod);
+   }
 }
