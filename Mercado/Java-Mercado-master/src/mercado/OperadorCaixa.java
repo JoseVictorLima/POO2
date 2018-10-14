@@ -8,6 +8,10 @@ public class OperadorCaixa extends Usuario {
         super(usuario, senha, nome, tipo);
     }
     
+    public String getNome() {
+    	return this.getNome();
+    }
+    
     public void menu(){
         Scanner teclado = new Scanner(System.in);
         int opcao;

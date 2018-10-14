@@ -28,9 +28,9 @@ public class Produto {
         int codProduto;
         // Menu Consultar o Produto
         System.out.println("===============================");
-        System.out.println("|      Consulta de preço      |");
+        System.out.println("|      Consulta Produto       |");
         System.out.println("===============================");
-        System.out.print("Coigo do produto: ");
+        System.out.print("Codigo do produto: ");
         Scanner teclado = new Scanner(System.in);
         codProduto = teclado.nextInt();
         System.out.println("Nome: "+estoque.getProduto(codProduto).nome+", Preço: "+estoque.getProduto(codProduto).preco+", Quantidade: "+ estoque.getQuantidade(codProduto));

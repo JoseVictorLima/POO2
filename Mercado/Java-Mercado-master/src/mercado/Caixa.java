@@ -6,6 +6,16 @@ import java.util.ArrayList;
 
 public class Caixa {
     
+	private int id;
+	
+	public Caixa(int id) {
+		this.id = id;
+	}
+	
+	public int getId() {
+		return this.id;
+	}
+	
     public void abrir(){
         //Log;
     }
