@@ -1,15 +1,34 @@
 package mercado;
 
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Date;
 
 public class OperadorCaixa extends Usuario {
 
+	private ArrayList<String> relatorios = new ArrayList();
+	
     public OperadorCaixa(String usuario, String senha, String nome, int tipo) {
         super(usuario, senha, nome, tipo);
     }
     
     public String getNome() {
     	return this.getNome();
+    }
+    
+    public void gerarRelatorio(float venda) {
+    	String log;
+    	Date data = new Date();
+    	log = "Venda: " + venda + "- Data: " + data;
+    	this.relatorios.add(log);
+    }
+    
+    public void mostarRelatorio() {
+    	for(int i = 0 ;i<this.relatorios.size();i++) {
+    		String relatorio;
+    		relatorio = this.relatorios.get(i);
+    		System.out.println(relatorio);
+    	}
     }
     
     public void menu(){
